@@ -45,32 +45,34 @@ https://javascript.info/
 * Isolated and independent
 * Unit tests are code too
 * Write unit testable code
-* DRY
+* DRY (do not repeat)
 * Single Responsibility
 * Functional programming (Remember?)
-* Goal: make your tests * readable, maintainable, trustworthy
+* Goal: make your tests _readable, maintainable, trustworthy_
 * Whenever possible use TDD approach
 
 ### Frameworks and Libraries
 
-Unit Testing Frameworks
-**Jasmine, AVA, Mocha, Qunit, Jest**
+**Unit Testing Frameworks**
+* Jasmine
+* AVA
+* Mocha
+* Qunit
+* Jest etc..
+
+**Assertion libraries**
+* Chai.js
+* Expect.js
+* Should.js
 
 Jasmin 
 * One of the most popular frameworks
 * Provide everything o-o-t-b
 * Assertions, spies and mocks
-Mocha
-* Arguably most used
-* Assertions, spies and mocks via other libs
-
-Assertion libraries
-* Chai.js
-* Expect.js
-* Should.js
-
 
 #### mocha
+* Arguably most used
+* Assertions, spies and mocks via other libs
 * Is a test framework
 * Runs on node and browser
 * Choose your own assertion, spies and mock library
@@ -114,8 +116,8 @@ Assertion libraries
 * They are primarily useful if you need to stub more than one function from a single object.
 * Unlike spies and stubs, mocks have assertions built-in
 
-#### Jest 
 
+#### Jest 
 * Used and recommended by Facebook for React apps
 * Snapshot testing for UI 
 * Can be used with enzyme (by airbnb)
