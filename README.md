@@ -1,16 +1,16 @@
-#Frankly Frontend
+# Frankly Frontend
 
-##HTML5
+## HTML5
 	New Tags
 	meta tags
 
 
-##CSS3
+## CSS3
 	Sass
 	CSS Model
 	Grid system
 
-##JavaScript
+## JavaScript
 	Datatypes
 	prototype
 	closure
@@ -63,12 +63,12 @@ https://javascript.info/
 Redux
 createStore() method to create the store.
 
-Store
+### Store
 	- binds together the 3 priciples of Redux
 	- holds current app state object
 	- lets you dispatch actions
 	- has a reducer that tells how state is updated with actions
 	- has 3 important methods
-	- 1. store.getState()
-	  2. store.dispatch()
-	  3. store.subscribe()
+		1. store.getState()
+	  	2. store.dispatch()
+	  	3. store.subscribe()
