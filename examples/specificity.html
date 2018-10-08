@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .button {
+            font-size: 20px;
+            color: white;
+            background-color: blue;
+        }
+
+        nav#nav div.pull-right .button {
+            background-color: green;
+        }
+        a {
+            background-color: purple;
+        }
+        #nav a.button:hover {
+            background-color: yellow;
+		}
+    </style>
+</head>
+<body>
+    
+
+    <nav id="nav">
+        <div class="pull-right">
+            <a href="" class="button">Click Me</a>
+        </div>
+    </nav>
+<comment>
+On hover, color will remain green. But if you add one more element in the last style declaration, it will be a tie in specificity. 
+And last declared style will be applied. (Of course on hover only)
+
+</comment>
+</body>
+</html>

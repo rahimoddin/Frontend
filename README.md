@@ -6,6 +6,47 @@
 
 
 ## CSS3
+	How CSS works
+	CSS Specificity
+		
+		The Cascade (The C in the CSS)
+		* Process of combining different stylesheets and resolving conflict between different CSS rules and declarations when multiple rules apply to an element.
+		* User agent styles (default styles)
+		* Styles from the Author
+		* Styles from User (changes inside the browser)
+
+		How?
+		* Importance > Specificity > Source Order
+		* Importance
+			1. User !important declarations
+			2. Author !important declarations
+			3. Author declarations
+			4. User declarations
+			5. Default browser declarations
+			Same Importance?
+		* Specificity
+			1. Inline styles
+			2. IDs
+			3. Classes, pseudo-classes, attribute
+			4. Elements, pseudo-elements
+
+			Example: 
+			specificity.html
+		* Source Order
+			The last declaration in the code will override all other declarations and will be applied.
+
+		Summary:
+
+		* !important declaration has highest priority
+		* User !imporatnt as a last resource
+		* Inline stylesheet have priority over external stylesheets
+		* A selector with 1 ID is more specific than one with 1000 classes
+		* Univesal selector (*) has no specificity value (0, 0, 0, 0)
+		* Rely more on specificity than on the order of the selector (exception 3rd party stylesheets)
+
+
+
+
 	Sass
 	CSS Model
 	Grid system
@@ -152,23 +193,22 @@ https://github.com/mawrkus/js-unit-testing-guide
 
 ### 3 principles
 
-	1. Single Immutable State Tree
-		first principle of redux * whole state of app as one JS object. 
-		Everything that changes date or state of the ui should be part of one state tree.
+1. Single Immutable State Tree
+* first principle of redux * whole state of app as one JS object. 
+* Everything that changes date or state of the ui should be part of one state tree.
 
-	2. Actions
-		An action plane js object describing the change.
-		A state is read-only, only way to change it by dispatching an action.
-		A plane JS object describing in minimal way.
-		It can be intiated by user action or network request.
+2. Actions
+* An action plane js object describing the change.
+* A state is read-only, only way to change it by dispatching an action.
+* A plane JS object describing in minimal way.
+* It can be intiated by user action or network request.
 
-	3. Reducer Function (pure functions)
-		State mutation in the app needs to be described as pure mutation.
-		It takes the previous state and action being dispatched and returns next state of the application.
-		This function is called reducer and it has be pure.
+3. Reducer Function (pure functions)
+* State mutation in the app needs to be described as pure mutation.
+* It takes the previous state and action being dispatched and returns next state of the application.
+* This function is called reducer and it has be pure.
 	
-Redux
-createStore() method to create the store.
+**Redux - createStore() method to create the store.**
 
 ### Store
 * binds together the 3 priciples of Redux
