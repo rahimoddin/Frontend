@@ -63,6 +63,40 @@
 	call, apply & bind
 	hoisting 
 		variable and function
+	Service Workers
+		* Rich offline experiences
+		* Periodic background syncs
+		* Push notifications
+		* Check details using chrome://serviceworker-internals or chrome://inspect/#service-workers
+
+		A script that browser runs in the background.
+		Separate from webpage
+		Does not need a webpage or user interactions
+		* Cant access DOM directly
+		* Can communicate with the paes it controls, via postMessage interface
+		* Make extensive use of Promises
+
+		Life cycle
+
+		* Separat lifecycle from a webpage
+		* Registering service worker
+		* Install > Activate
+		* 
+
+		Prerequisites
+
+		* Browser support
+		* Need HTTPS
+
+		Scope
+
+		* If service worker file is placed at root domain then its scope will be entire origin.
+		* It will receive fetch events for everything on the domain
+		* If we register worker file at /example/sw.j, thn it would only see fetch event for pages whose url starts with /example/
+
+		
+
+
 
 https://javascript.info/
 
