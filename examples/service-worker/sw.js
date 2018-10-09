@@ -22,5 +22,7 @@ self.addEventListener('install', function(event) {
  * and wether it succeeded or not
  * If all the files are successfully cached, the worker will be installed
  * If any of the files fails to download, then install step will fail
- * 
+ *  Open a cache.
+ *  Cache our files.
+ *  Confirm whether all the required assets are cached or not.
  */

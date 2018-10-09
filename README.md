@@ -94,10 +94,23 @@
 		* It will receive fetch events for everything on the domain
 		* If we register worker file at /example/sw.j, thn it would only see fetch event for pages whose url starts with /example/
 
+		Example:
+		/examples/service-wroker/sw-example.html
+
+		Events 
+		install - after registration of the worker
+		fetch - on navigation to other pages or refresh 
+		activate - 
+
+		Updating a service worker
+		* When user navigate to the site, browser will redownload the updated script file
+		* Service worker will be started and install event will be fired
+		* Old service worker still in place, new worker will be in 'waiting' state
+		* When currently open pages are closed, old service worker will be killed
+		* And new worker will take control, its activate event will be fired
 		
 
-
-
+		
 https://javascript.info/
 
 
