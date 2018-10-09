@@ -1,4 +1,4 @@
-# Frankly Frontend
+# Frontend
 
 ## HTML5
 	New Tags
@@ -34,7 +34,8 @@
 			specificity.html
 		* Source Order
 			The last declaration in the code will override all other declarations and will be applied.
-
+		(Inline Styles, IDs, Classes, Elements)
+		(#,#,#,#)
 		Summary:
 
 		* !important declaration has highest priority
@@ -54,7 +55,10 @@
 ## JavaScript
 	Datatypes
 	prototype
+	functions
+		* 
 	closure
+	Emergin javaScript
 	classes
 	call, apply & bind
 	hoisting 
